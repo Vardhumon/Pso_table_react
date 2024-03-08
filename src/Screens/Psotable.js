@@ -13,7 +13,7 @@ export default function PsoTable() {
   ]);
 
   const handleRowSave = (editedCo, editedPo, editedPso) => {
-    const newData = data.map(item => {
+    const newData = data.map((item) => {
       if (item.co === editedCo) {
         return { ...item, po: editedPo, pso: editedPso };
       }
@@ -38,8 +38,10 @@ export default function PsoTable() {
               Program Outcomes (PO)
             </div>
             <div className="row">
-              {[...Array(12).keys()].map(index => (
-                <div className="col" key={index}>PO{index + 1}</div>
+              {[...Array(12).keys()].map((index) => (
+                <div className="col" key={index}>
+                  PO{index + 1}
+                </div>
               ))}
             </div>
           </div>
@@ -48,8 +50,10 @@ export default function PsoTable() {
               Program Specific Outcomes (PSO)
             </div>
             <div className="row">
-              {[...Array(3).keys()].map(index => (
-                <div className="col" key={index}>PSO{index + 1}</div>
+              {[...Array(3).keys()].map((index) => (
+                <div className="col" key={index}>
+                  PSO{index + 1}
+                </div>
               ))}
             </div>
           </div>
